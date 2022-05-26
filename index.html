@@ -8,7 +8,26 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body> 
-    <div class="container">
+    <div class="container">  
+        <div class="title">Etch - a - Sketch</div> 
+        <div class="content"> 
+            <div class="board"></div> 
+            <div class="buttons">
+                <button class="black-button"   onclick="colorChange('black')">Black</button >  
+                <button class="gray-button"  onclick="colorChange('gray')">Gray</button > 
+                <button class="random-button"  onclick="colorChange('random')">Random</button > 
+                <button class="white-button" onclick="colorChange('white')">Eraser</button > 
+                <button class="reset-button"  onclick="resetBoard()">Reset</button>
+            </div> 
+            <div class="input-size">
+                <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/> 
+                <button>Set Size</button>
+            </div> 
+            <div class="error">
+
+            </div>
+        </div>
+
 
     </div>
 <script src="./script.js"></script> 
